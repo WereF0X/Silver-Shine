@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "silver:silver_ingot"
+    },
+    "title": {
+      "translate": "advancements.silver_shines.title"
+    },
+    "description": {
+      "translate": "advancements.silver_shines.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "silver_shines": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "silver:silver_ingot"
+            ],
+            "count": {
+              "min": 1,
+              "max": 2
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "minecraft:story/iron_tools"
+}
